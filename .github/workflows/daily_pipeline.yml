@@ -1,0 +1,46 @@
+name: Automated Market Sentiment & Pricing Engine
+
+on:
+  # 1. Run automatically every day at midnight UTC (Cron schedule)
+  schedule:
+    - cron: '0 0 * * *'
+  # 2. Allow manual triggers from the GitHub website
+  workflow_dispatch:
+
+permissions:
+  contents: write # Grants the bot permission to push the updated CSV back to the repo
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Clone the repository onto the GitHub server
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Python environment
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip' # Speeds up future runs by caching dependencies
+
+      # Step 3: Install all libraries from requirements.txt
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Execute the Python pipeline
+      - name: Run Market Pipeline
+        run: python main.py
+
+      # Step 5: Commit the newly generated predictions back to the repository
+      - name: Commit and Push Results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/latest_predictions.csv
+          git commit -m "Auto-update: Daily market predictions" || echo "No changes to commit"
+          git push
