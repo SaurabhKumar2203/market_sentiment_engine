@@ -12,8 +12,6 @@ An automated, end-to-end Machine Learning pipeline that predicts 7-day stock pri
 
 **[🔴 View the Live Interactive Dashboard Here](INSERT_YOUR_STREAMLIT_URL_HERE)**
 
-*(Note: Replace `INSERT_YOUR_STREAMLIT_URL_HERE` with your actual Streamlit Cloud URL)*
-
 ---
 
 ## 📸 Dashboard Preview
