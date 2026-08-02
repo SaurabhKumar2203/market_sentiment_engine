@@ -10,7 +10,7 @@
 ## 📌 Project Overview
 An automated, end-to-end Machine Learning pipeline that predicts 7-day stock price movements (currently targeting AAPL). The engine scrapes daily financial news, processes unstructured text into quantitative sentiment scores using a fine-tuned Transformer model, and feeds these features into a time-series forecasting model.
 
-**[🔴 View the Live Interactive Dashboard Here](INSERT_YOUR_STREAMLIT_URL_HERE)**
+**[🔴 View the Live Interactive Dashboard Here](https://marketsentimentengine-hbd95htju9yqh72f5hcuws.streamlit.app/)**
 
 ---
 
