@@ -5,3 +5,5 @@ pandas
 transformers
 torch
 prophet
+SQLAlchemy
+psycopg2-binary
