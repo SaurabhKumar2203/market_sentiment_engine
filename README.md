@@ -16,9 +16,9 @@ An automated, end-to-end Machine Learning pipeline that predicts 7-day stock pri
 
 ## 📸 Dashboard Preview
 
-![Streamlit Dashboard Screenshot](INSERT_YOUR_IMAGE_PATH_HERE.png)
+![Streamlit Dashboard Screenshot](<img width="1881" height="881" alt="Screenshot 2026-08-02 082044" src="https://github.com/user-attachments/assets/db92514b-71cf-432b-b546-c12fef481d33" />
+)
 
-*(Note: Drag and drop your `image_426665.png` file into your GitHub repository, then replace `INSERT_YOUR_IMAGE_PATH_HERE.png` with the actual image filename/URL)*
 
 ---
 
