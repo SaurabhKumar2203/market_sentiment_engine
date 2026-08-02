@@ -16,6 +16,9 @@ An automated, end-to-end Machine Learning pipeline that predicts 7-day stock pri
 
 ## 📸 Dashboard Preview
 
+<img width="1881" height="881" alt="Screenshot 2026-08-02 082044" src="https://github.com/user-attachments/assets/a8774044-8810-42a3-b92b-4a72b08924bb" />
+
+
 ![Streamlit Dashboard Screenshot](<img width="1881" height="881" alt="Screenshot 2026-08-02 082044" src="https://github.com/user-attachments/assets/db92514b-71cf-432b-b546-c12fef481d33" />
 )
 
